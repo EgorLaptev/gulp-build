@@ -39,7 +39,7 @@ function watch(cd) {
 
 /* Export tasks */
 gulp.task('default', gulp.series(build, watch))
-gulp.task('watch', gulp.series(build, watch))
+gulp.task('watch', watch)
 gulp.task('build', build)
 gulp.task('drop', drop)
 gulp.task('zip', zip)
